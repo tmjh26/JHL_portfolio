@@ -14,34 +14,3 @@ var myFullpage = new fullpage('#fullpage', {
     }
 });
 
-// 팝업
-$(function () {
-	$('.art1').click(function () {
-		$('.pop1').fadeIn();
-	});
-	$('.art2').click(function () {
-		$('.pop2').fadeIn();
-	});
-	$('.art3').click(function () {
-		$('.pop3').fadeIn();
-	});
-
-	$('.popup p').click(function () {
-		$('.popup').fadeOut();
-	});
-});
-
-// 팝업 슬라이드
-$(function () {
-	var swiper = new Swiper('.popup_slide ', {
-		speed: 1000,//버튼을 슬라이드가 넘어가는 시간
-		navigation: {//화살표 버튼
-			nextEl: '.popup .swiper-button-next',
-			prevEl: '.popup .swiper-button-prev',
-		},
-		pagination: {//블릿 버튼
-			el: '.popup .swiper-pagination',
-			clickable: true,
-		},
-	});
-});

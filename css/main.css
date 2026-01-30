@@ -1129,6 +1129,11 @@ h6 {
 	}
 }
 
+/* comming soon */
+.disabled {
+  pointer-events: none;
+  cursor: default; /* 또는 not-allowed */
+}
 
 
 /* 3 */
@@ -1164,7 +1169,7 @@ h6 {
 .art li img {
 	display: block;
 	width: 100%;
-	cursor: pointer;
+	
 	transition: all 0.5s ease;
 }
 
@@ -1277,13 +1282,179 @@ h6 {
 	padding: 3em;
 	box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
 	border-radius: 20px;
+		
+	
 }
 
 .our-skill-area {
 	position: relative;
 }
 
-.skill {}
+.skill{
+	width: 10%;
+
+}
+
+.skill img{
+	width: 100%;
+}
+
+/* 스킬1 */
+.skill_1 .bar1{
+	margin-top: 10px;
+	width: 100%;
+	height: 20%;
+	background-color: #afafaf;
+	border-radius: 10px;
+	overflow: hidden;
+	position: relative;
+}
+.skill_1 .bar2{
+	width: 129%;
+	height: 100%;
+
+	background-color: #4193ff;
+	position: absolute;
+	top: 0;
+	left: -150%;
+	animation: bar 4s ease forwards;
+}
+
+/* 막대 애니메이션 */
+@keyframes bar{
+	0%{transform: translateX(0);}
+	100%{transform: translateX(90%);}
+}
+
+/* 스킬2 */
+.skill_2 .bar1{
+	margin-top: 10px;
+	width: 100%;
+	height: 20%;
+	background-color: #afafaf;
+	border-radius: 10px;
+	overflow: hidden;
+	position: relative;
+}
+.skill_2 .bar2{
+	width: 140%;
+	height: 100%;
+
+	background-color: #4193ff;
+	position: absolute;
+	top: 0;
+	left: -150%;
+	animation: bar 4s ease forwards;
+}
+
+/* 스킬3 */
+.skill_3 .bar1{
+	margin-top: 10px;
+	width: 100%;
+	height: 20%;
+	background-color: #afafaf;
+	border-radius: 10px;
+	overflow: hidden;
+	position: relative;
+}
+.skill_3 .bar2{
+	width: 120%;
+	height: 100%;
+
+	background-color: #4193ff;
+	position: absolute;
+	top: 0;
+	left: -150%;
+	animation: bar 4s ease forwards;
+}
+
+/* 스킬4 */
+.skill_4 .bar1{
+	margin-top: 10px;
+	width: 100%;
+	height: 20%;
+	background-color: #afafaf;
+	border-radius: 10px;
+	overflow: hidden;
+	position: relative;
+}
+.skill_4 .bar2{
+	width: 125%;
+	height: 100%;
+
+	background-color: #4193ff;
+	position: absolute;
+	top: 0;
+	left: -150%;
+	animation: bar 4s ease forwards;
+}
+
+/* 스킬5 */
+.skill_5 .bar1{
+	margin-top: 10px;
+	width: 100%;
+	height: 20%;
+	background-color: #afafaf;
+	border-radius: 10px;
+	overflow: hidden;
+	position: relative;
+}
+.skill_5 .bar2{
+	width: 128%;
+	height: 100%;
+
+	background-color: #4193ff;
+	position: absolute;
+	top: 0;
+	left: -150%;
+	animation: bar 4s ease forwards;
+}
+
+/* 스킬6 */
+.skill_6 .bar1{
+	margin-top: 10px;
+	width: 100%;
+	height: 20%;
+	background-color: #afafaf;
+	border-radius: 10px;
+	overflow: hidden;
+	position: relative;
+}
+.skill_6 .bar2{
+	width: 125%;
+	height: 100%;
+
+	background-color: #4193ff;
+	position: absolute;
+	top: 0;
+	left: -150%;
+	animation: bar 4s ease forwards;
+}
+
+/* 스킬7 */
+.skill_7 .bar1{
+	margin-top: 10px;
+	width: 100%;
+	height: 20%;
+	background-color: #afafaf;
+	border-radius: 10px;
+	overflow: hidden;
+	position: relative;
+}
+.skill_7 .bar2{
+	width: 122%;
+	height: 100%;
+
+	background-color: #4193ff;
+	position: absolute;
+	top: 0;
+	left: -150%;
+	animation: bar 4s ease forwards;
+}
+
+
+
+
 
 
 .test-overly {
@@ -1311,6 +1482,7 @@ h6 {
 #section6 {
 	background-color: #fff;
 	text-align: center;
+	margin-top: 30px;
 }
 
 .myContent {
@@ -1490,6 +1662,8 @@ h6 {
 		padding: 5em 0;
 	}
 
+
+
 	.fp-tableCell {
 		padding-bottom: 10px;
 	}
@@ -1543,9 +1717,11 @@ h6 {
 		width: 49%;
 	}
 
-	.skills img {
-		width: 10%;
-	}
+
+
+
+
+
 }
 
 /* 749px 이하 */
@@ -1585,15 +1761,9 @@ h6 {
 		width: 70%;
 	}
 
-	.skills {
-		padding: 2em;
-		justify-content: flex-start;
-		gap: 10px calc(10% / 5);
-	}
 
-	.skills img {
-		width: 15%;
-	}
+
+
 }
 
 /* 599px 이하 */
@@ -1606,17 +1776,12 @@ h6 {
 		width: 100%;
 	}
 
-	.skills {
-		gap: 10px calc(10% / 4);
-	}
-
-	.skills img {
-		width: 18%;
-	}
 
 
 
-
+.bar1{
+	display: none;
+}
 
 
 	
@@ -1624,13 +1789,8 @@ h6 {
 
 /* 499px 이하 */
 @media (max-width:499px) {
-	.skills {
-		gap: 10px calc(10% / 2);
-	}
 
-	.skills img {
-		width: 30%;
-	}
+
 
 	
 }
