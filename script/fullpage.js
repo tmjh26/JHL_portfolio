@@ -4240,3 +4240,48 @@ if(window.jQuery && window.fullpage){
         };
     })(window.jQuery, window.fullpage);
 }
+
+
+// 스킬
+document.addEventListener("DOMContentLoaded", () => {
+  const skills = document.querySelector(".skills");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          skills.classList.add("active");
+        } else {
+          skills.classList.remove("active"); // 👈 이게 핵심
+        }
+      });
+    },
+    {
+      threshold: 0.3
+    }
+  );
+
+  observer.observe(skills);
+});
+
+
+// 퍼즐 오브젝트
+document.addEventListener("DOMContentLoaded", () => {
+  const puzObjs = document.querySelectorAll(".puz_obj");
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("active");
+      } else {
+        entry.target.classList.remove("active"); // 나가면 멈춤
+      }
+    });
+  }, {
+    threshold: 0.3
+  });
+
+  puzObjs.forEach(obj => observer.observe(obj));
+});
+
+
