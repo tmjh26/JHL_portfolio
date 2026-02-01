@@ -1,0 +1,237 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+body {
+    font-family: "NanumSquareNeo";
+    font-size: 14px;
+    line-height: 24px;
+    color: #333;
+}
+
+
+
+#wrap_bg {
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    background-image: url(../images/card_news2/card_news2_bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.wrap {
+    width: 1320px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 100px 0;
+    /* background-color: orange; */
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -660px;
+    z-index: 2;
+}
+
+.text{
+    width: 30%;
+    /* background-color: #005e46; */
+    color: #fff;
+}
+
+.text h1{
+    font-size: 32px;
+}
+
+.text h2{
+    margin: 30px 0 20px;
+    font-weight: 500;
+}
+
+.color_wrap{
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    text-align: center;
+    gap: 7px;
+}
+
+.color_box{
+    width: 18%;
+    /* background-color: orange; */
+}
+
+.color{
+    width: 100%;
+    height: 70px;
+    border: 1px solid #fff;
+    
+}
+
+
+
+
+
+.color1{
+background-color: #000B51;
+}
+.color2{
+background-color: #2D6592;
+}
+.color3{
+background-color: #0390F5;
+}
+.color4{
+background-color: #fff0df;
+}
+.color5{
+background-color: #FBEA03;
+}
+
+
+.font{
+    width: 100%;
+}
+
+.font img{
+    display: block;
+    width: 80%;
+}
+
+
+.img {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color: orange; */
+
+}
+
+.img img {
+    display: block;
+    width: 49%;
+    box-shadow: 3px 3px 5px #333;
+    
+}
+
+.img img:nth-child(1){
+    margin-right: 2%;
+    margin-bottom: 2%;
+}
+.img img:nth-child(2){
+    margin-bottom: 2%;
+}
+.img img:nth-child(3){
+    margin-right: 2%;
+}
+.img img:nth-child(2){
+    margin-bottom: 2%;
+}
+
+
+/* 캐릭터 */
+.obj_1{
+    width: 25%;
+    position: absolute;
+    bottom: -5%;
+    left: 5%;
+    animation: obj1 4s ease infinite;
+}
+.obj_1 img{
+    display: block;
+    width: 100%;
+}
+
+@keyframes obj1{
+    0%{transform: translateY(0);}
+    50%{transform: translateY(10%);}
+    100%{transform: translateY(0);}
+
+}
+
+/* 오른쪽 오브젝트 */
+.obj_2{
+    width: 3%;
+    position: absolute;
+    bottom: 20%;
+    right: 15%;
+    animation: obj1 4s ease infinite;
+    animation-delay: 0.7s;
+}
+.obj_2 img{
+    display: block;
+    width: 100%;
+}
+
+.obj_3{
+    width: 4%;
+    position: absolute;
+    bottom: 27%;
+    right: 12%;
+    animation: obj1 4s ease infinite;
+    animation-delay: 1s;
+}
+.obj_3 img{
+    display: block;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* 버튼 */
+.btn_1 {
+    list-style: none;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    text-align: center;
+    z-index: 99;
+}
+
+.btn_1 li {
+    margin: 10px;
+}
+
+.btn_1 li a {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    background: #fff;
+    color: #003983;
+    border: 2px solid #003983;
+    font-weight: bold;
+}
+
+.btn_1 li a:hover {
+    background-color: #003983;
+    color: #fff;
+}
