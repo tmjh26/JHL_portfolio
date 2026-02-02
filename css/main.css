@@ -152,7 +152,11 @@ h6 {
 }
 
 .light-right {
-	z-index: 4;
+	z-index: 2;
+}
+
+.light3{
+	z-index: 2;
 }
 
 .obj {
@@ -252,37 +256,44 @@ h6 {
 
 .light-left {
 	left: 0;
-	top: -15%;
+	top: -100px;
 	animation-duration: 5s;
 }
 
 .light-right {
 	right: 0;
-	top: 0;
+	top: -100px;
 	animation-duration: 6s;
 }
+
+.light3{
+	left: 0;
+	top: 0;
+	animation-duration: 8s;
+}
+
 
 /* 오브젝트 */
 
 
 .obj1 {
 	width: 10%;
-	left: 40%;
-	bottom: 2%;
+	left: 10%;
+	bottom: 70%;
 	animation: obj1 4s ease-in-out infinite;
 }
 
 .obj2 {
 	width: 10%;
-	right: 30%;
+	right: 20%;
 	bottom: 37%;
 	animation: obj2 6s ease-in-out infinite;
 }
 
 .obj3 {
 	width: 10%;
-	right: 25%;
-	bottom: 15%;
+	right: 22%;
+	bottom: 10%;
 	animation: obj3 4s ease-in-out infinite;
 }
 
@@ -295,8 +306,8 @@ h6 {
 
 .obj5 {
 	width: 7%;
-	right: 16%;
-	bottom: 35%;
+	right: 9%;
+	bottom: 45%;
 	animation: obj5 4.2s ease-in-out infinite;
 
 }
@@ -304,14 +315,14 @@ h6 {
 .obj6 {
 	width: 6%;
 	right: 5%;
-	bottom: 50%;
+	bottom: 72%;
 	animation: obj6 4s ease-in-out infinite;
 }
 
 .obj7 {
 	width: 6%;
-	right: 14%;
-	bottom: 60%;
+	right: 20%;
+	bottom: 70%;
 	animation: obj7 4.3s ease-in-out infinite;
 }
 
@@ -490,7 +501,7 @@ h6 {
 .cha {
 	width: 40%;
 	left: 0%;
-	bottom: -300px;
+	top: 300px;
 	animation: cha 10s ease-in-out infinite;
 }
 
@@ -731,7 +742,7 @@ h6 {
 
 .p10 {
 	width: 9%;
-	top: 32%;
+	top: 26%;
 	left: 60%;
 
 	--from-x: 100px;
@@ -1166,6 +1177,8 @@ h6 {
 }
 
 
+
+
 .puz1{
 	top: 0;
 	left: -400px;
@@ -1229,7 +1242,7 @@ h6 {
 .art li {
 	width: 30%;
 	transition: 0.7s;
-	box-shadow: 0 0 3px #000b5150;
+	box-shadow: 3px 3px 10px #000b5150;
 	position: relative;
 	border-radius: 20px;
 	overflow: hidden;
@@ -1352,11 +1365,28 @@ h6 {
 	align-items: center;
 }
 
+
 .my {
-	width: 50%;
+width: 50%;
+position: relative;
+
+}
+
+
+.my_img{
+
+	width: 100%;
 	height: 100%;
 	object-fit: cover;
 }
+
+
+
+
+
+
+
+
 
 .about {
 	width: 50%;
@@ -1383,6 +1413,10 @@ h6 {
 	font-weight: 400;
 	line-height: 1.5em;
 }
+
+
+
+
 
 
 /* 5 */

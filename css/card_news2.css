@@ -42,7 +42,7 @@ body {
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
-    padding: 100px 0;
+    padding: 50px 0;
     /* background-color: orange; */
     position: absolute;
     top: 0;
@@ -52,7 +52,7 @@ body {
 }
 
 .text{
-    width: 30%;
+    width: 520px;
     /* background-color: #005e46; */
     color: #fff;
 }
@@ -75,15 +75,18 @@ body {
 }
 
 .color_box{
-    width: 18%;
+    width: 520px;
     /* background-color: orange; */
 }
 
+
 .color{
-    width: 100%;
-    height: 70px;
-    border: 1px solid #fff;
-    
+    width: 80px;
+    height: 80px;   
+    border: 1px solid #fff; 
+}
+.color_box p{
+    width: 80px;
 }
 
 
@@ -118,7 +121,7 @@ background-color: #FBEA03;
 
 
 .img {
-    width: 70%;
+    width: 800px;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -134,17 +137,17 @@ background-color: #FBEA03;
 }
 
 .img img:nth-child(1){
-    margin-right: 2%;
-    margin-bottom: 2%;
+    margin-right: 10px;
+    margin-bottom: 10px;
 }
 .img img:nth-child(2){
-    margin-bottom: 2%;
+    margin-bottom: 10px;
 }
 .img img:nth-child(3){
-    margin-right: 2%;
+    margin-right: 10px;
 }
 .img img:nth-child(2){
-    margin-bottom: 2%;
+    margin-bottom: 10px;
 }
 
 
@@ -152,9 +155,9 @@ background-color: #FBEA03;
 .obj_1{
     width: 25%;
     position: absolute;
-    bottom: -5%;
-    left: 5%;
-    animation: obj1 4s ease infinite;
+    bottom: -20px;
+    left: 50px;
+    animation: obj1 10s ease-in-out infinite;
 }
 .obj_1 img{
     display: block;
@@ -172,9 +175,9 @@ background-color: #FBEA03;
 .obj_2{
     width: 3%;
     position: absolute;
-    bottom: 20%;
-    right: 15%;
-    animation: obj1 4s ease infinite;
+    bottom: 180px;
+    right: 200px;
+    animation: obj1 4s ease-in-out infinite;
     animation-delay: 0.7s;
 }
 .obj_2 img{
@@ -185,9 +188,9 @@ background-color: #FBEA03;
 .obj_3{
     width: 4%;
     position: absolute;
-    bottom: 27%;
-    right: 12%;
-    animation: obj1 4s ease infinite;
+    bottom: 270px;
+    right: 120px;
+    animation: obj1 4.7s ease-in-out infinite;
     animation-delay: 1s;
 }
 .obj_3 img{
