@@ -277,6 +277,7 @@ h6 {
 
 
 .obj1 {
+	
 	width: 10%;
 	left: 10%;
 	bottom: 70%;
@@ -1154,7 +1155,8 @@ h6 {
 
 /* 퍼즐 오브젝트 */
 .puz,
-.puz_2{
+.puz_2,
+.c5{
   position: absolute;
   opacity: 0;
   animation: none;
@@ -1176,31 +1178,40 @@ h6 {
   animation-iteration-count: infinite;
 }
 
+.puz_obj.active .c5{
+  opacity: 1;
+  animation-name: puz_2;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
 
 
 
 .puz1{
+	width: 30%;
 	top: 0;
 	left: -400px;
-	animation-duration: 5.7s;
+	animation-duration: 15.7s;
 }
 
 .puz2{
+	width: 25%;
 	top: 400px;
 	left: -450px;
-	animation-duration: 9.3s;
+	animation-duration: 19.3s;
 }
 
 
 .puz3{
-
+	width: 20%;
 		top: -50px;
 	right: -300px;
-	animation-duration: 7.6s;
+	animation-duration: 17.6s;
 }
 
 .puz4{
-
+	width: 30%;
 		top: 300px;
 	right: -400px;
 	animation-duration: 12.6s;
@@ -1208,9 +1219,11 @@ h6 {
 
 
 .puz5{
+	width: 20%;
 	top: 600px;
 	right: -300px;
-	animation-duration: 8.6s;
+	animation-duration: 18.6s;
+	
 }
 
 
@@ -1219,7 +1232,7 @@ h6 {
 		transform: translateY(0) rotate(30deg);	
 	}
 	50%{
-		transform: translateY(-30%) rotate(-10deg);
+		transform: translateY(-100px) rotate(-30deg);
 	}
 	100%{
 		transform: translateY(0) rotate(30deg);
@@ -1298,27 +1311,30 @@ h6 {
 
 
 .puz6{
+	width: 25%;
 	top: -150px;
 	left: -300px;
-	animation-duration: 5.7s;
+	animation-duration: 15.7s;
 }
 
 .puz7{
-	top: 200px;
+	width: 22%;
+	top: 100px;
 	left: -400px;
-	animation-duration: 9.3s;
+	animation-duration: 19.3s;
 }
 
 
 .puz8{
-
+	width: 20%;
 		top: -150px;
 	right: -300px;
-	animation-duration: 7.6s;
+	animation-duration: 17.6s;
+	
 }
 
 .puz9{
-
+	width: 20%;
 		top: 300px;
 	right: -300px;
 	animation-duration: 12.6s;
@@ -1326,21 +1342,22 @@ h6 {
 
 
 .puz10{
+	width: 25%;
 	bottom: -250px;
 	left: -250px;
-	animation-duration: 8.6s;
+	animation-duration: 18.6s;
 }
 
 
 @keyframes puz_2 {
 	0%{
-		transform: translateY(0) rotate(30deg);	
+		transform: translateY(0) rotate(50deg);	
 	}
 	50%{
-		transform: translateY(-30%) rotate(-10deg);
+		transform: translateY(-100px) rotate(-50deg);
 	}
 	100%{
-		transform: translateY(0) rotate(30deg);
+		transform: translateY(0) rotate(50deg);
 	}
 }
 
@@ -1379,8 +1396,6 @@ position: relative;
 	height: 100%;
 	object-fit: cover;
 }
-
-
 
 
 
@@ -1630,10 +1645,6 @@ position: relative;
 }
 
 
-
-
-
-
 .test-overly {
 	/* background: rgba(0, 0, 0, 0.80); */
 	position: absolute;
@@ -1652,6 +1663,35 @@ position: relative;
 #skill.area-padding {
 	padding-top: 0;
 }
+
+
+.c5{
+	position: absolute;
+
+}
+
+.c5p1{
+	width: 20%;
+	top:100px;
+	left: -350px;
+	animation: c5p 15.7s;
+}
+
+.c5p2{
+	width: 20%;
+	top:400px;
+	right: -350px;
+	animation: c5p 12.7s;
+}
+
+
+@keyframes c5p{
+	0%{transform: translateY(0) rotate(15deg);}
+	50%{transform: translateY(-100px) rotate(-15deg);}
+	100%{transform: translateY(0) rotate(15deg);}
+}
+
+
 
 
 
