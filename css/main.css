@@ -1248,7 +1248,7 @@ h6 {
 .art {
 	display: flex;
 	justify-content: space-between;
-
+	flex-wrap: wrap;
 
 }
 
@@ -1259,6 +1259,7 @@ h6 {
 	position: relative;
 	border-radius: 20px;
 	overflow: hidden;
+	margin-bottom: 30px;
 
 }
 
@@ -1312,14 +1313,14 @@ h6 {
 
 .puz6{
 	width: 25%;
-	top: -150px;
+	top: 50px;
 	left: -300px;
 	animation-duration: 15.7s;
 }
 
 .puz7{
 	width: 22%;
-	top: 100px;
+	top: 250px;
 	left: -400px;
 	animation-duration: 19.3s;
 }
@@ -1327,7 +1328,7 @@ h6 {
 
 .puz8{
 	width: 20%;
-		top: -150px;
+		top: 150px;
 	right: -300px;
 	animation-duration: 17.6s;
 	
@@ -1335,7 +1336,7 @@ h6 {
 
 .puz9{
 	width: 20%;
-		top: 300px;
+		top: 600px;
 	right: -300px;
 	animation-duration: 12.6s;
 }
@@ -1343,8 +1344,8 @@ h6 {
 
 .puz10{
 	width: 25%;
-	bottom: -250px;
-	left: -250px;
+	bottom: -20px;
+	left: -270px;
 	animation-duration: 18.6s;
 }
 
